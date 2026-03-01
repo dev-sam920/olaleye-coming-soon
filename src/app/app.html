@@ -1,0 +1,53 @@
+<main #container class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0a0a0a]">
+  <!-- Infinity Loop Canvas -->
+  <canvas #infinityCanvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+
+  <!-- Animated Background Blobs -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div #blob1 class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-white/5 rounded-full blur-[120px]"></div>
+    <div #blob2 class="absolute -bottom-[10%] -right-[10%] w-[50%] h-[50%] bg-white/5 rounded-full blur-[150px]"></div>
+    <div #blob3 class="absolute top-[20%] right-[10%] w-[30%] h-[30%] bg-white/[0.03] rounded-full blur-[100px]"></div>
+  </div>
+
+  <!-- Background Radial Gradient Overlay -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_0%,transparent_70%)] pointer-events-none"></div>
+
+  <div class="relative z-10 flex flex-col items-center text-center px-6 max-w-2xl">
+    <!-- Logo/Icon -->
+    <div class="animate-item opacity-0 mb-8">
+      <div class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 bg-white/5">
+        <mat-icon class="text-white/80 scale-125">eco</mat-icon>
+      </div>
+    </div>
+
+    <!-- Coming Soon Label -->
+    <span class="animate-item opacity-0 text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
+      Coming Soon
+    </span>
+
+    <!-- Main Heading -->
+    <h1 class="animate-item opacity-0 text-4xl sm:text-6xl md:text-7xl font-display font-black text-white leading-[1.1] tracking-tight mb-6">
+      Something new <br class="hidden sm:block"> is on the way.
+    </h1>
+
+    <!-- Subtext -->
+    <p class="animate-item opacity-0 text-base sm:text-lg text-white/70 font-semibold leading-relaxed mb-12 max-w-md">
+      We're building something worth the wait. Stay tuned for updates and be the first to know when we launch.
+    </p>
+
+    <!-- Divider -->
+    <div class="animate-item opacity-0 w-12 h-[2px] bg-white/20 mb-12"></div>
+
+    <!-- Footer / Social -->
+    <div class="animate-item opacity-0 flex items-center gap-2 text-sm text-white/50 font-bold">
+      <span>Get in touch</span>
+      <span class="text-white/30">—</span>
+      <a href="https://x.com/chris_happ50420" target="_blank" class="text-white/80 hover:text-white transition-colors">
+        @Olaleye
+      </a>
+    </div>
+  </div>
+
+  <!-- Subtle Bottom Gradient -->
+  <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
+</main>
